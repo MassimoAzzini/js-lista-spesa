@@ -1,3 +1,4 @@
+// 1.
 const listaSpesa = [
   'banane',
   'insalata',
@@ -11,18 +12,24 @@ const listaSpesa = [
   'uova',
 ]
 
+// 2.
+const outputLi = document.getElementById('output-list');
 
-
+// 3.
 let i = 0;
 
 while(i < listaSpesa.length){
 
-  
-  const itemSpesa = listaSpesa[i];
-  
-  console.log(itemSpesa);
+  // 4.
+  const listItem = document.createElement('li');
 
+  // 5.
+  listItem.innerHTML = listaSpesa[i];
+  
+  // 6.
+  outputLi.append(listItem);
 
+  // 7.
   i++;
 }
 
